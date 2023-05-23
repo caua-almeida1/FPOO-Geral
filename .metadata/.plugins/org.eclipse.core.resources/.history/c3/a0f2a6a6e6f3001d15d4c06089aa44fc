@@ -1,0 +1,24 @@
+import java.util.Scanner;
+
+public class ArmazenamentoDeNomes {
+	public static void main(String[]args) {
+        String[] nomes = new String[10];
+        
+        System.out.println("####----BEM VINDO AO SISTEMA DE NOMES----####");
+        
+        Scanner scanner = new Scanner(System.in);
+
+        for (int i = 0; i < 10; i++) {
+            System.out.println("Digite o " + (i + 1) + " nome ");
+            nomes[i] = scanner.nextLine();
+        }
+        
+        System.out.println("Nomes Armazenados: ");
+        
+        for (int i = 0; i < 10; i++) {
+            System.out.println(nomes[i]);
+        }
+        
+        scanner.close();
+    }
+}

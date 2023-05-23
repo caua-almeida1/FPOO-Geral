@@ -1,0 +1,54 @@
+package aprendizagem1;
+
+import java.util.Scanner;
+
+public class Main {
+	
+	public static void main(String[] args) {
+		
+		Scanner objScanner= new Scanner(System.in);
+		DadosPessoais objDadosPessoais = new DadosPessoais();
+		DadosContato objDadosContato = new DadosContato();
+		DadosEndereco objDadosEndereco = new DadosEndereco();
+		
+		System.out.println("INFORME UM NOME: ");
+		objDadosPessoais.setNome(objScanner.next());
+		
+		System.out.println("INFORME UM SOBRENOME: ");
+		objDadosPessoais.setsobreNome(objScanner.next());
+		
+		System.out.println("INFORME UMA DATA DE NASCIMENTO: ");
+		objDadosPessoais.setdataNascimento(objScanner.next());
+		
+		System.out.println("INFORME UM GÊNERO: ");
+		objDadosPessoais.setgenero(objScanner.next());
+		
+		System.out.println("INFORME UM EMAIL: ");
+		objDadosContato.setemail(objScanner.next());
+		
+		System.out.println("INFORME UM TELEFONE: ");
+		objDadosContato.setTelefone(objScanner.next());
+		
+		System.out.println("INFORME UM CEP: ");
+		objDadosEndereco.setcep(objScanner.next());
+		
+		System.out.println("INFORME UM LOGRADOURO: ");
+		objDadosEndereco.setlogradouro(objScanner.next());
+		
+		System.out.println("INFORME UM NÚMERO: ");
+		objDadosEndereco.setnumero(objScanner.next());
+		
+		System.out.println("INFORME UM BAIRRO: ");
+		objDadosEndereco.setbairro(objScanner.next());
+		
+		System.out.println("INFORME UMA CIDADE: ");
+		objDadosEndereco.setcidade(objScanner.next());
+		
+		System.out.println("INFORME UM ESTADO: ");
+		objDadosEndereco.setEstado(objScanner.next());
+		
+		
+		
+	}
+
+}

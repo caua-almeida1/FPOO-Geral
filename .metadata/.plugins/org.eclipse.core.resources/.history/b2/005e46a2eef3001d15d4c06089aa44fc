@@ -1,0 +1,24 @@
+public class Enunciado02 {
+    public static void main(String[] args) {
+        int[] valores1 = new int[10];
+        int[] valores2 = new int[10];
+        
+        for (int i = 0; i < 10; i++) {
+            valores1[i] = i + 1;
+        }
+        
+        for (int i = 0; i < 10; i++) {
+            valores2[i] = i * 3;
+        }
+        
+        System.out.println("Valores originais:");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(valores1[i]);
+        }
+        
+        System.out.println("Valores multiplicados por três:");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(valores2[i]);
+        }
+    }
+}

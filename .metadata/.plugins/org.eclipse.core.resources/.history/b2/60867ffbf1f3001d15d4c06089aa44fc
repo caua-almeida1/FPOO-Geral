@@ -1,0 +1,29 @@
+import java.util.Scanner;
+
+public class Enunciado02 {
+    public static void main(String[] args) {
+    	int[] valores1 = new int[10];
+    	int[] valores2 = new int[10];
+        
+        Scanner scanner = new Scanner(System.in);
+        
+        for (int i = 0; i < 10; i++) {
+        	System.out.println("Digite o " + (i + 1) + "° número: ");
+        	valores1[i] = scanner.nextLine();
+        }
+        
+        for (int i = 0; i < 10; i++) {
+        	valores2[i] = valores1[i] * 3;
+        }
+        
+        System.out.println("Valores originais (valores1):");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(valores1[i]);
+        }
+        
+        System.out.println("Valores multiplicados por três (valores2):");
+        for (int i = 0; i < 10; i++) {
+            System.out.println(valores2[i]);
+        }
+    }
+}

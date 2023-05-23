@@ -1,0 +1,18 @@
+
+public class classystem {
+	
+	public static void main (String[] args) {
+		
+		System.out.println("#### VERIFICA S.O ####");
+		
+		System.out.println("NOME DO SISTEMA OPERACIONAL: " + System.getProperty("os.name"));
+		
+		System.out.println("VERSÃO DO SISTEMA OPERACIONAL: " + System.getProperty("os.version"));
+		
+		
+		
+		
+	}
+	
+	
+}

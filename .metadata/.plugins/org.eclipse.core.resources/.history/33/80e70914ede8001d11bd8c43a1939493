@@ -1,0 +1,62 @@
+import java.util.Scanner;
+
+public class Menu {
+
+	DadosPessoais objDadosPessoais;
+	DadosContato objDadosContato;
+	DadosEndereco objDadosEndereco;
+	
+	
+	public void exibirMenu() {
+		
+		int opcao = 0;
+		Scanner objScanner = new Scanner(System.in);
+		
+		while(opcao != 6 ) {
+		
+		System.out.println("ESCOLHA UMA OPÇÃO PELO NÚMERO");
+		System.out.println("1 - DADOS PESSOAIS");
+		System.out.println("2 - DADOS DE CONTATO)");
+		System.out.println("3 - DADOS DE ENDEREÇO");
+		System.out.println("4 - EXIBIR DADOS CADASTRADOS");
+		System.out.println("5 - CADASTRAR NOVO CLIENTE");
+		System.out.println("6 - SAIR DO SISTEMA");
+		
+		opcao = objScanner.nextInt();
+		
+		switch (opcao) {
+		
+		case 1:
+			System.out.println("DIGITE O NOME DO CLIENTE: ");
+			objDadosPessoais = new DadosPessoais();
+			objDadosPessoais.setNome(objScanner.next());
+			break;
+			
+		case 2:
+			System.out.println("DIGITE O SOBRENOME DO CLIENTE: ");
+			objDadosPessoais = new DadosPessoais();
+			objDadosPessoais.setsobreNome(objScanner.next());
+			break;
+			
+		case 3:
+			System.out.println("DIGITE O SOBRENOME DO CLIENTE: ");
+			objDadosPessoais = new DadosPessoais();
+			objDadosPessoais.setdataNascimento(objScanner.next());
+			break;
+			
+		case 4:
+			System.out.println("DIGITE O SOBRENOME DO CLIENTE: ");
+			objDadosPessoais = new DadosPessoais();
+			objDadosPessoais.setdataNascimento(objScanner.next());
+			break;
+			
+		default:
+			System.out.println("OPÇÃO IVÁLIDA!");
+			break;
+		} //FIM DO SWITCH
+		
+		} //FIM DO WHILE
+		
+	} //FIM DO MÉTODO EXIBIR MENU
+	
+} //FIM DA CLASS MENU

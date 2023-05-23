@@ -1,0 +1,11 @@
+package aprendizagem1;
+
+public class Menu {
+	
+	Nome objNome;
+	Sobrenome objSobrenome;
+	DataNascimento objDataNascimento;
+	Genero objGenero;
+	Email objEmail;
+	Telefone objTelefone;
+}
